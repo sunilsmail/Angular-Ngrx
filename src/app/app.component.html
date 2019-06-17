@@ -1,0 +1,15 @@
+<h1>
+  <div>
+    {{title}}
+  </div>
+</h1>
+
+<div *ngFor="let post of (posts$ | async)">
+  <div>
+    <span>Id:</span> {{post.id}}
+  </div>
+  <div>
+    <span>Title:</span> {{post.title}}
+  </div>
+  <br>
+</div>
